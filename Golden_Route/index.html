@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Golden Route Import and Export co., Ltd</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- إضافة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* أيقونات التواصل */
+        .contact-icons a.icon-circle {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            margin: 10px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 28px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .contact-icons a.whatsapp { background: #25D366; }
+        .contact-icons a.facebook { background: #3b5998; }
+        .contact-icons a.wechat { background: #7BB32E; }
+        .contact-icons a.icon-circle:hover {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+<!-- Nav -->
+<nav id="nav">
+    <ul class="container">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Home -->
+<article id="top" class="wrapper style1">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-5-large col-12-medium">
+                <span class="image fit"><img src="images/icons.jpg" alt="Home Image" /></span>
+            </div>
+            <div class="col-8 col-7-large col-12-medium">
+                <header>
+                    <h1>Welcome to <strong>Golden Route</strong></h1>
+                </header>
+                <p>We specialize in import and export services with high quality and reliability.</p>
+                <a href="#work" class="button large scrolly">Learn about what we do</a>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Work -->
+<article id="work" class="wrapper style2">
+    <div class="container">
+        <header>
+            <h2>Our Services</h2>
+        </header>
+        <div class="row aln-center">
+            <div class="col-4 col-6-medium col-12-small">
+                <section class="box style1">
+                    <span class="image fit"><img src="images/home2.jpg" alt="Service Icon" /></span>
+                </section>
+            </div>
+            <div class="col-4 col-6-medium col-12-small">
+                <section class="box style1">
+                    <span class="image fit"><img src="images/home.jpg" alt="Service Icon" /></span>
+                </section>
+            </div>
+            <div class="col-4 col-6-medium col-12-small">
+                <section class="box style1">
+                    <span class="image fit"><img src="images/home2.jpg" alt="Service Icon" /></span>
+                </section>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Portfolio (Only Two Images) -->
+<article id="portfolio" class="wrapper style3">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-12-medium">
+                <article class="box style2">
+                    <a href="#" class="image featured"><img src="images/adv.jpg" alt="Advertisement" /></a>
+                </article>
+            </div>
+            <div class="col-6 col-12-medium">
+                <article class="box style2">
+                    <a href="#" class="image featured"><img src="images/card2.jpg" alt="Card Image" /></a>
+                </article>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Contact -->
+<article id="contact" class="wrapper style4">
+    <div class="container medium">
+        <header>
+            <h2>Contact Us</h2>
+            <p>We are here to assist you. Reach out via your preferred platform:</p>
+        </header>
+        <div class="row">
+            <div class="col-12">
+                <img src="images/contact.jpg" alt="Contact Image" class="image fit" />
+                
+                <!-- أيقونات التواصل -->
+<!-- أيقونات التواصل -->
+<div class="contact-icons" style="text-align:center; margin-top:20px;">
+    <!-- واتساب -->
+    <a href="https://wa.me/967772222884" target="_blank" class="icon-circle whatsapp" title="WhatsApp">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+    
+<!-- انستجرام -->
+<a href="https://www.instagram.com/goldenroute.co" target="_blank" class="icon-circle instagram" title="Instagram">
+    <i class="fa fa-instagram"></i>
+</a>
+
+    
+    <!-- ويشات -->
+    <a href="javascript:void(0)" onclick="openWeChat()" class="icon-circle wechat" title="WeChat">
+        <i class="fa fa-weixin"></i>
+    </a>
+</div>
+
+<!-- نافذة منبثقة لعرض WeChat ID -->
+<div id="wechatModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeWeChat()">&times;</span>
+        <h2>WeChat ID</h2>
+        <p id="wechatId">13236869705</p>
+        <button onclick="copyWeChat()">Copy ID</button>
+    </div>
+</div>
+
+<!-- تنسيقات CSS -->
+<style>
+/* النافذة الخلفية */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+/* محتوى النافذة */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 300px;
+  width: 80%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+/* زر الإغلاق */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* زر النسخ */
+button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #25d366;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1ebc57;
+}
+</style>
+
+<!-- سكربت JavaScript -->
+<script>
+function openWeChat() {
+  document.getElementById("wechatModal").style.display = "flex";
+}
+
+function closeWeChat() {
+  document.getElementById("wechatModal").style.display = "none";
+}
+
+function copyWeChat() {
+  var wechatId = document.getElementById("wechatId").innerText;
+  navigator.clipboard.writeText(wechatId).then(function() {
+    alert("WeChat ID copied: " + wechatId);
+  });
+}
+</script>
+
+
+
+
+            </div>
+            <div class="col-12">
+                <hr />
+                <div class="row">
+                    <div class="col-12">
+                        <img src="images/QR1.jpg" alt="QR Code" class="image fit" />
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <footer>
+            <ul id="copyright">
+                <li>&copy; 2025 Golden Route. All rights reserved.</li>
+            </ul>
+        </footer>
+    </div>
+</article>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
